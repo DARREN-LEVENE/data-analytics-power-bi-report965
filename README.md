@@ -151,7 +151,7 @@ Some of the key measures that will be required in the report were created in the
 
 To enable appropriate drill down analysis for the report, appropriate **Date** and **Geography** heirarchies were added, as well as a new **Geography** calculated column in **Stores** table.
 
-#### Completed Star Schema Data Model:
+### Completed Star Schema Data Model:
 
 ![Screenshot 2024-02-12 123113](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/88a7a5c6-b575-4a20-971d-967298ddd0c5)
 
@@ -189,7 +189,7 @@ Other visuals created for the **Customer Detail** page were as follows:
 -  A set of three card visuals showing the name, number of orders , and revenue for the top customer by revenue.
 -  A date slicer
 
-#### Completed Customer Detail Page
+### Completed Customer Detail Page
 
 ![Screenshot 2024-02-12 172803](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/28bbf4ed-473c-4b23-951f-602fab901864)
 
@@ -207,7 +207,7 @@ Created as follows:
 
 ![Screenshot 2024-02-13 095615](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/9b0e72dc-7841-46f7-9284-050a50096bd1)
 
-#### KPI cards for Quarterly Revenue, Profit and Customers
+#### KPI cards for Quarterly Revenue, Profit and Orders
 These cards show the actual performance versus the Quarterly Growth target, which was calculated as the 5% increase on previous quarter. This was defined in a calculated measure as follows:
 
 ``Quarterly Profit Growth Target = [Previous Quarter Profit]*1.05``
@@ -215,7 +215,7 @@ These cards show the actual performance versus the Quarterly Growth target, whic
 ![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/0a576673-c296-49bf-8f15-bd427b4522a4)
 
 
-The KPI card visiual was constructed as follows:
+The KPI card visual was constructed as follows:
 
 ![Screenshot 2024-02-13 102103](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/c8c2d813-9966-4283-b0a0-10cc2d8bd4d0)
 
@@ -223,7 +223,46 @@ DAX for Previous Quarter Profit, which was used in the DAX formula for Quarterly
 
 ![Screenshot 2024-02-14 090725](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/c1a5aa05-724c-46da-87f8-13ea6fb49cbf)
 
+In addition to this, visuals were produced for the following:
+-  Card visuals for Total Revenue, Total Profit and Total Orders
+-  Donut charts showing orders and revenue by country
+-  Bar chart of Orders by category
+-  Table of Top 10 products
 
+### Completed Executive Summary page
+
+![Screenshot 2024-02-14 141024](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/dffe4eec-4bab-41cf-83e1-89cc24f437d3)
+
+
+### Building the Products Detail page
+
+This page is designed to provide executives with an in-depth look at which products within the inventory are performing well, with the option to filter by product and region.
+
+#### Card visuals showing which filters are currently selected
+The following Slicer Toolbar was constructed using bookmarks to allow user to select Product Category and Country filters for page visuals
+
+![Screenshot 2024-02-14 142932](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/de831e8c-9f6f-4eda-80e6-dffbddcfd42d)
+
+#### Slicer Toolbar was constructed as follows:
+
+![Screenshot 2024-02-14 143535](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/704084bf-913f-4c38-923a-027d5308e799)
+
+#### Area chart showing relative performance of each category over time
+
+![Screenshot 2024-02-14 143015](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/a091378c-c196-4995-af0b-82dca125f859)
+
+#### Area chart was constructed as follows:
+
+![Screenshot 2024-02-14 144852](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/dc3bd74d-79bc-4868-9148-94ae8b1c5932)
+
+In addition, further visuals were created for the Product Detail page:
+-  Gauge visuals to show how the selected categories revenue, profit and number of orders are performing against a quarterly target, which was a 10% increase in previous quarter performance.
+-  Table showing top 10 products by revenue in the selected context.
+-  Scatter graph of the quantity ordered against profit per item for products in the current context.
+
+### Completed Product Detail page
+
+![Screenshot 2024-02-14 145847](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/91b2ac32-74b5-49a7-8cf9-f33c6ad86567)
 
 
 
