@@ -161,7 +161,7 @@ To enable appropriate drill down analysis for the report, appropriate **Date** a
 Report pages for **Executive Summary**, **Customer Detail**, **Product Detail** and **Stores Map** were created, together with colour theme and navigation sidebar.
 
 
-#### Building the Customer Detail Page
+### Building the Customer Detail Page
 
 This page of the report has a customer focused analysis, and includes the following visuals:
 
@@ -183,46 +183,45 @@ Created as follows:
 ![Screenshot 2024-02-12 141127](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/a2164b41-6e35-4abc-a144-81a62f890d4c)
 
 
-#### A table showing the top 20 customers by total revenue, showing revenue per customer, and the total orders for each customer.
+Other visuals created for the **Customer Detail** page were as follows:
+-  A table showing the top 20 customers by total revenue, showing revenue per customer, and the total orders for each customer.
+-  A Donut chart showing the number of customers by country, and a Bar chart showing the number of customers by product category.
+-  A set of three card visuals showing the name, number of orders , and revenue for the top customer by revenue.
+-  A date slicer
 
-![Screenshot 2024-02-12 141348](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/bb5d4757-a022-4ee8-ad45-bd5ea22e6a83)
+#### Completed Customer Detail Page
 
-Created as follows:
+![Screenshot 2024-02-12 172803](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/28bbf4ed-473c-4b23-951f-602fab901864)
 
-![Screenshot 2024-02-12 141459](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/36e70b88-3df6-4528-82a0-b7451a70cc89)
+### Building the Executive Summary Page
 
+This page of the report is intended for high level executives, as an overview of the performance of the business as a whole to gain insights, and easily check actual performance against benchmarks and targets.
+The Executive Summary contains the following visuals:
 
-#### A Donut chart showing the number of customers by country, and a Bar chart showing the number of customers by product category.
+#### Graph of Revenue against Time
+The graph has functionality to enable user to drill down timescale to different time periods
 
-![Screenshot 2024-02-12 141942](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/04514f63-1ce7-4519-9376-dc182f320ac7)
-
-
-Created as follows:
-
-![Screenshot 2024-02-12 142056](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/564f29a0-7902-4da4-a120-63da8e53bea5)
-
-
-#### A set of three card visuals showing the name, number of orders , and revenue for the top customer by revenue.
-
-![Screenshot 2024-02-12 143055](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/dedcdccc-a0f0-4560-864e-2c33e164438b)
+![Screenshot 2024-02-13 095401](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/b4b694b0-bf25-4524-a448-ee87bcaeb227)
 
 Created as follows:
 
-![Screenshot 2024-02-12 143128](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/72cb0ab1-f5ce-4bcb-8574-1f624762886f)
+![Screenshot 2024-02-13 095615](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/9b0e72dc-7841-46f7-9284-050a50096bd1)
+
+#### KPI cards for Quarterly Revenue, Profit and Customers
+These cards show the actual performance versus the Quarterly Growth target, which was calculated as the 5% increase on previous quarter. This was defined in a calculated measure as follows:
+
+``Quarterly Profit Growth Target = [Previous Quarter Profit]*1.05``
+
+![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/0a576673-c296-49bf-8f15-bd427b4522a4)
 
 
-#### A date slicer
+The KPI card visiual was constructed as follows:
 
-![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/ca66d0a6-e6ff-4e75-b24a-9a58869d997f)
+![Screenshot 2024-02-13 102103](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/c8c2d813-9966-4283-b0a0-10cc2d8bd4d0)
 
-Created as follows:
+DAX for Previous Quarter Profit, which was used in the DAX formula for Quarterly Profit growth target:
 
-![Screenshot 2024-02-12 143543](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/f6a5a9e2-df7b-4084-ad98-9d93d6aafbde)
-
-
-
-
-
+![Screenshot 2024-02-14 090725](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/c1a5aa05-724c-46da-87f8-13ea6fb49cbf)
 
 
 
