@@ -265,6 +265,18 @@ In addition, further visuals were created for the Product Detail page:
 ![Screenshot 2024-02-14 145847](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/91b2ac32-74b5-49a7-8cf9-f33c6ad86567)
 
 
+### Building the Stores Map page
+
+This page allows regional management to easily access management information of stores within their remit. For example, which of their stores are the most profitable, as well as to see at a glance 
+which stores are on track to achieve their quarterly profit and revenue targets.
+
+A map visual and country slicer was added to the page, to enable users to select which countries / regions to look at on the map visual.
+
+#### Stores Drillthrough page
+
+
+
+
 
 
     
