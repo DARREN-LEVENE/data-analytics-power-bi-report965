@@ -23,7 +23,7 @@ The data set consists of four tables:
 -  Customers Dimension Table
   
 
-#### Import and Transform Orders Fact Table
+#### Orders Fact Table
 
 ``orders_powerbi`` table is the main fact table, containing information about each order. It was imported from Azure SQL Database using credentials provided for server_name, database_name, username and password, and using **Import** option in Power BI.
 **Power Query Editor** was used to transform the data and accessed using:
@@ -37,12 +37,12 @@ The following transformations were performed in Power Query Editor:
 -  Any rows where the ``[Order Date]`` column has missing or null values are filtered out and removed.
 -  Columns in table are renamed to follow Power BI naming conventions for consistency.
 
-Imported and Transformed Orders Table:
+Orders Table:
 
 ![Screenshot 2024-02-11 154445](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/1698d7f2-2423-45e6-8a63-5c1b2a8453b7)
 
 
-#### Import and Transform Products Dimensions Table
+#### Products Dimensions Table
 
 The **Products** table contains information about each product sold by the company.
 ``Products.csv`` file was downloaded onto local computer, and then Power BI's **Get Data** option was used to import the file into the project:
@@ -51,29 +51,29 @@ The **Products** table contains information about each product sold by the compa
 
 The following transformations were performed in Power Query Editor:
 -  **Remove Duplicates** function was used on ``product_code`` column to ensure each product code was unique
+-   Columns in table are renamed to follow Power BI naming conventions for consistency.
 
 ![Screenshot 2024-02-11 194837](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/7a2b0140-5ced-42ba-9d23-4c413a95b082)
 
--  Columns in table are renamed to follow Power BI naming conventions for consistency.
 
-Imported and Transformed Products Dimension Table:
+Products Dimension Table:
 
 ![Screenshot 2024-02-11 195732](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/f8c127d9-60cb-4f7e-a9dc-3a19c86341e2)
 
 
-#### Import and Transform Stores Dimension Table
+#### Stores Dimension Table
 
 The **Stores** table contains information about each store. Power BI's **Get Data** option was used to connect to Azure Blob Storage and import the **Stores** table into the project, using Blob storage credentials for account_name, Account Key
 and Container Name.
 
 Columns in table are renamed to follow Power BI naming conventions for consistency.
 
-Imported **Stores** Dimension Table:
+**Stores** Dimension Table:
 
 ![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/1c1eda90-f0ba-440e-94dc-efb9f0fd5487)
 
 
-#### Import and Transform Customers Dimension Table
+#### Customers Dimension Table
 
 The **Customers** table contains information about every customer in each region. 
 
@@ -86,7 +86,7 @@ appended the three files into one query.
 -  ``Full Name`` column was created by combining the ``[First Name]`` and ``[Last Name]`` columns
 -  Unused columns (eg. index columns) were deleted, and remaining columns were renamed to align with Power BI naming conventions
 
-Imported and Transformed **Customers** Dimension Table:
+**Customers** Dimension Table:
 
 ![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/d7603bdf-5b50-478a-8957-e9f595398d0b)
 
@@ -274,6 +274,54 @@ A map visual and country slicer was added to the page, to enable users to select
 
 #### Stores Drillthrough page
 
+This page gives management detailed information on each individual store, and includes the following visuals: 
+-  Card visual showing currently selected store.
+-  Table showing top 5 products, with coluns ofr **Description**, **Profit YTD**, **Total Orders** and **Total Revenue**
+-  Column Chart showing **Total Orders** by **Product Category** for the store
+-  Gauges for **Profit YTD** against a profit target of 20% year on year growth v same period previous year.
+
+New measures of Profit Goal and Revenue Goal, reflecting 20% increase from previous year were written in DAX:
+
+``Previous Year Profit = 
+CALCULATE(
+    TOTALYTD('Measures Table'[Total Profit],
+            PREVIOUSYEAR(LASTDATE('Dates'[Date])
+        )
+    )
+    )``
+
+``Profit Goal = [Previous Year Profit]*1.2``
+
+#### Drillthrough page Profit Goal gauge:
+
+![Screenshot 2024-02-15 164837](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/c2ce8dd4-cdda-4f5f-a533-acd7995280fa)
+
+Profit Goal Gauge was constructed as follows:
+
+![Screenshot 2024-02-15 170001](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/d9847c74-7e03-4fd5-837b-9ed4c489d812)
+
+
+#### Drillthrough page Top 5 Products table:
+
+![Screenshot 2024-02-15 165202](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/208e4872-7e87-42b3-b663-75d258caa0d4)
+
+Top 5 Product table constructed as follows:
+
+![Screenshot 2024-02-15 170118](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/aaf4f220-1643-4051-b504-265b65344634)
+
+#### Complete Drillthrough page example
+
+![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/3afd14c7-cd4b-4c4b-a2d1-26685e6be4e5)
+
+#### Store tooltip visual
+
+This was created to display each stores year to date profit performance against profit target by hovering mouse over each store.
+
+![Screenshot 2024-02-15 170405](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/a1db2c33-2f7f-4657-8da7-af329cac8619)
+
+### Completed Stores Map page
+
+![Screenshot 2024-02-15 170555](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/8e6a1d63-6c2b-43cb-adfe-82c1c62cbc61)
 
 
 
