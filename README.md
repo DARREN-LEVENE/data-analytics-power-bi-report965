@@ -324,7 +324,41 @@ This was created to display each stores year to date profit performance against 
 ![Screenshot 2024-02-15 170555](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/8e6a1d63-6c2b-43cb-adfe-82c1c62cbc61)
 
 
+### Cross Filtering
 
+Now that the report visuals have been completed, it is important to fix which visuals filter each other, and which ones shouldnt. The settings for each visual can
+can be specified by utilising **Edit Interactions** button in **Format** tab of the ribbon.
+
+By way of example, these are the settings for **Total Orders by Category**  bar chart in **Executive Summary** page
+
+![Screenshot 2024-02-16 101008](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/932e6f49-6692-4cf8-afc7-90b401f1544f)
+
+### Completing Navigation Bar
+
+The navigation bar was completed, to allow users to easily navigate between report pages. This was set up with page icons to click onto for each page, which would change colour when mouse hovered.
+
+![Screenshot 2024-02-16 102404](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/ca1be5eb-2c93-42d4-98f1-87ddd2ced2a1)                                   
+
+![Screenshot 2024-02-16 102439](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/d9d13757-6ad8-4d05-8f5d-7c9c688f091a)
+
+
+For each button on the navigation sidebar, **Action** format option was turned on, type set to **Page Navigation**, and the correct page selected for **Destination**
+
+### Gaining insights from the database using SQL queries
+
+The final part of the project was to gain insights from the database using SQL queries. This was done by connecting to Postgres database server hosted by Microsoft Azure.
+This was done in VS Code with **SQLTools extension**, and connecting to database using appropriate credentials.
+
+A list of tables in the database was printed and saved to csv file. Then, a list of columns in each table was printed and saved in csv files.
+
+SQL queries were used to answer the following questions of the database:
+-  How many staff are there in all of the UK stores?
+-  Which month in 2022 has had the highest revenue?
+-  Which German store type had the highest revenue for 2022?
+-  Create a view where the rows are the store types and the columns are the total sales, percentage of total sales and the count of orders
+-  Which product category generated the most profit for the "Wiltshire, UK" region in 2021?
+
+SQL queries and results were recorded in full in the **Data_Analytics_PowerBI_Report** Github Repo
 
 
     
