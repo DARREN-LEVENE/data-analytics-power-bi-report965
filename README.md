@@ -39,7 +39,8 @@ The following transformations were performed in Power Query Editor:
 
 Orders Table:
 
-![Screenshot 2024-02-11 154445](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/1698d7f2-2423-45e6-8a63-5c1b2a8453b7)
+![Screenshot 2024-02-19 102029](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/5d489e3c-4b79-424a-bc4b-24d3a176b9ac)
+
 
 
 #### Products Dimensions Table
@@ -58,7 +59,8 @@ The following transformations were performed in Power Query Editor:
 
 Products Dimension Table:
 
-![Screenshot 2024-02-11 195732](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/f8c127d9-60cb-4f7e-a9dc-3a19c86341e2)
+![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/32226726-57b7-4939-a6ea-14963ef063f5)
+
 
 
 #### Stores Dimension Table
@@ -70,7 +72,8 @@ Columns in table are renamed to follow Power BI naming conventions for consisten
 
 **Stores** Dimension Table:
 
-![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/1c1eda90-f0ba-440e-94dc-efb9f0fd5487)
+![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/7ab6f6a5-c41c-4f61-b08c-fc90981c2a2f)
+
 
 
 #### Customers Dimension Table
@@ -88,7 +91,8 @@ appended the three files into one query.
 
 **Customers** Dimension Table:
 
-![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/d7603bdf-5b50-478a-8957-e9f595398d0b)
+![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/f2fbab87-11ea-4667-9012-8a1d9434bc4c)
+
 
 
 
@@ -153,7 +157,8 @@ To enable appropriate drill down analysis for the report, appropriate **Date** a
 
 ### Completed Star Schema Data Model:
 
-![Screenshot 2024-02-12 123113](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/88a7a5c6-b575-4a20-971d-967298ddd0c5)
+![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/ffad9e52-d6e6-4388-8661-e3bf0874a9c5)
+
 
 
 ## Creating the Power BI Report
@@ -167,7 +172,8 @@ This page of the report has a customer focused analysis, and includes the follow
 
 #### Card visuals for total distinct customers and revenue per customer
 
-![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/622954ad-45b9-4ed3-8ed7-ced642fb37b7)
+![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/b4c79c64-3a9b-40f8-8725-ed69b0d78668)
+
 
 Created as follows:
 
@@ -191,7 +197,8 @@ Other visuals created for the **Customer Detail** page were as follows:
 
 ### Completed Customer Detail Page
 
-![Screenshot 2024-02-12 172803](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/28bbf4ed-473c-4b23-951f-602fab901864)
+![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/c5fa4c33-1541-4f9f-b059-dc9e0ffd2463)
+
 
 ### Building the Executive Summary Page
 
@@ -231,7 +238,8 @@ In addition to this, visuals were produced for the following:
 
 ### Completed Executive Summary page
 
-![Screenshot 2024-02-14 141024](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/dffe4eec-4bab-41cf-83e1-89cc24f437d3)
+![Screenshot 2024-02-19 103959](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/c6f29516-a54b-40ae-b3dc-40c48a45f792)
+
 
 
 ### Building the Products Detail page
@@ -262,7 +270,8 @@ In addition, further visuals were created for the Product Detail page:
 
 ### Completed Product Detail page
 
-![Screenshot 2024-02-14 145847](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/91b2ac32-74b5-49a7-8cf9-f33c6ad86567)
+![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/94230908-a2b5-4628-b8d2-52d4cc3f9a58)
+
 
 
 ### Building the Stores Map page
@@ -329,9 +338,9 @@ This was created to display each stores year to date profit performance against 
 Now that the report visuals have been completed, it is important to fix which visuals filter each other, and which ones shouldnt. The settings for each visual can
 can be specified by utilising **Edit Interactions** button in **Format** tab of the ribbon.
 
-By way of example, these are the settings for **Total Orders by Category**  bar chart in **Executive Summary** page
 
-![Screenshot 2024-02-16 101008](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/932e6f49-6692-4cf8-afc7-90b401f1544f)
+![image](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/388fee7d-8b62-4e6d-bda2-0295e4e33436)
+
 
 ### Completing Navigation Bar
 
