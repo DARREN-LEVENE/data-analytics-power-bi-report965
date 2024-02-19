@@ -358,7 +358,7 @@ SQL queries were used to answer the following questions of the database:
 -  Create a view where the rows are the store types and the columns are the total sales, percentage of total sales and the count of orders
 -  Which product category generated the most profit for the "Wiltshire, UK" region in 2021?
 
-SQL queries and results were recorded in full in the **Data_Analytics_PowerBI_Report** Github Repo
+SQL queries and results were recorded in full in the project's Github Repo
 
 
     
