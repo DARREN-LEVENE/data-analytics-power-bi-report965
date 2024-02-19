@@ -25,7 +25,7 @@
 -  [Stores Drillthrough page](#stores-drillthrough-page)
 -  [Store tooltip visual](#store-tooltip-visual)
 
-5  [Gaining insights from the database using SQL queries](gaining-insights-from-the-database-using-sql-queries)
+5  [Gaining insights from the database using SQL queries](#gaining-insights-from-the-database-using-sql-queries)
 
 
 
