@@ -2,6 +2,7 @@
 ![Screenshot 2024-02-11 145522](https://github.com/DARREN-LEVENE/data-analytics-power-bi-report965/assets/150942326/813db2d4-74b3-4db9-beb1-0fc9816a4840)
 
 
+
 ## Project Description
 
 This project considers the scenario of an international retailer who is keen to elevate their business intelligence practices. With operations spanning across different geographical regions, they have accumulated large amounts of data from varied sources over
