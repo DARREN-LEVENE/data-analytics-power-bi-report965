@@ -3,6 +3,32 @@
 
 
 
+## Table of Contents
+1  [Project Description](#project-description)
+
+2  [Importing Data into Power BI](#importing-data-into-power-bi)
+-  [Orders Fact Table](#orders-fact-table)
+-  [Products Dimensions Table](#products-dimensions-table)
+-  [Stores Dimension Table](#stores-dimension-table)
+-  [Customers Dimension Table](#customers-dimension-table)
+
+3  [Create the Data Model](#create-the-data-model)
+-  [Build a Date Table](#build-a-date-table)
+-  [Building Star Schema Data Model](#building-star-schema-data-model)
+-  [Create Key Measures](#create-key-measures)
+
+4  [Creating the Power BI Report](#creating-the-power-bi-report)
+-  [Building the Customer Detail Page](#building-the-customer-detail-page)
+-  [Building the Executive Summary Page](#building-the-executive-summary-page)
+-  [Building the Products Detail page](#building-the-products-detail-page)
+-  [Building the Stores Map page](#building-the-stores-map-page)
+-  [Stores Drillthrough page](#stores-drillthrough-page)
+-  [Store tooltip visual](#store-tooltip-visual)
+
+5  [Gaining insights from the database using SQL queries](gaining-insights-from-the-database-using-sql-queries)
+
+
+
 ## Project Description
 
 This project considers the scenario of an international retailer who is keen to elevate their business intelligence practices. With operations spanning across different geographical regions, they have accumulated large amounts of data from varied sources over
